@@ -11,14 +11,13 @@ from engineResources import *
 ''' 
 params
 '''
-w = Window(1000,600,60)
+w = Window(1000,600,60,'Mi primer juego :D')
 fondo = Background("BG City.jpg")
 icono = Image(fondo.adress)
-
+s1=w.screen
 ''' 
 screenSetup
 '''
-s1 = initScreen(w.width,w.hight,'Mi primer juego :D')
 setBackgroundImage(s1,fondo)
 setIcon(icono)
 
@@ -39,4 +38,4 @@ gameLoop
 while True:
   gameLoopSetup(w)
   
-  fondo.move(w,s1,0.5)
+  fondo.move(w,0.5)
