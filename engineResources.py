@@ -64,7 +64,7 @@ def gameLoopSetup(window):
   pygame.display.update() #=pygame.display.flip()
   clock.tick(window.FPS)
 
-'''movement'''
+'''movement
 px = 50
 py = 200
 ancho = 40
@@ -124,3 +124,4 @@ else:
   else:
     cuentaSalto = 10
     salto = False
+'''
