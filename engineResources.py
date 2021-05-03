@@ -5,6 +5,19 @@ from engineConstants import *
 clock=pygame.time.Clock()
 
 #classes
+class Music():
+  def __init__(self,adress):
+    self.adress=adress
+    pygame.mixer.music.load(adress)
+  def play(self,times):
+    pygame.mixer.music.play(times)
+  def loop(self):
+    pygame.mixer.music.play(-1)
+  def volume(self,vol):
+    pygame.mixer.music.set_volume(vol)
+  def mute(self):
+    pygame.mixer.music.set_volume(0.0)
+  
 class Window():
   def __init__(self,width,hight,FPS,title):
     pygame.init()
@@ -12,11 +25,6 @@ class Window():
     self.hight=hight
     self.FPS=FPS
     self.screen=initScreen(width,hight,title);
-  def newMusic(self,adress):
-    self.musicAdress=adress
-    self.music=pygame.mixer.music.load(adress)
-  def playMusic(self,times):
-    pygame.mixer.music.play(times)
 
 class Image():
   def __init__(self,adress):

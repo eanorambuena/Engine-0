@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "repl_python3_Engine-essay"
+name = "repl_python3_pygameToolKitEngine [PTK Engine]"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Pygame Tool Kit Engine"
+authors = ["Emmanuel Norambuena <eanorambuena@uc.cl>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
