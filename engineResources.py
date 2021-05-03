@@ -9,6 +9,9 @@ class Music():
   def __init__(self,adress):
     self.adress=adress
     pygame.mixer.music.load(adress)
+  def newAdress(self,newAd):
+    self.adress=newAd
+    pygame.mixer.music.load(newAd)
   def play(self,times):
     pygame.mixer.music.play(times)
   def loop(self):

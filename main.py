@@ -21,6 +21,9 @@ screenSetup
 '''
 setBackgroundImage(s1,fondo)
 setIcon(icono)
+musica=Music('exampleMusic.ogg')
+musica.play(2)
+musica.volume(1)
 
 '''
 gameSetup

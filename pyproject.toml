@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "repl_python3_pygameToolKitEngine [PTK Engine]"
+name = "repl_python3_pygameToolKitEngine"
 version = "0.1.0"
 description = "Pygame Tool Kit Engine"
 authors = ["Emmanuel Norambuena <eanorambuena@uc.cl>"]
