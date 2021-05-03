@@ -1,14 +1,5 @@
 import pygame, sys, os
-
-#colors
-white = (255,255,255)
-black = (0,0,0)
-red = (255,0,0)
-green = (0,255,0)
-blue = (0,0,255)
-cian = (0,255,255)
-HC74225 = (199,66,37)
-H61CD35 = (97,205,53)
+from engineConstants import *
 
 #other variables
 clock=pygame.time.Clock()
@@ -21,6 +12,11 @@ class Window():
     self.hight=hight
     self.FPS=FPS
     self.screen=initScreen(width,hight,title);
+  def newMusic(self,adress):
+    self.musicAdress=adress
+    self.music=pygame.mixer.music.load(adress)
+  def playMusic(self,times):
+    pygame.mixer.music.play(times)
 
 class Image():
   def __init__(self,adress):

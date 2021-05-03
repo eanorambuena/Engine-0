@@ -3,6 +3,7 @@ resources
 '''
 #moduls
 import pygame, sys, os
+from engineConstants import *
 from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
@@ -24,9 +25,9 @@ setIcon(icono)
 '''
 gameSetup
 '''
-pygame.draw.rect(s1, red, (100,50,100,50))
-pygame.draw.line(s1, blue, (100,104),(199,132), 1)
-pygame.draw.circle(s1, cian, (122, 250), 20, 0)
+pygame.draw.rect(s1, RED, (100,50,100,50))
+pygame.draw.line(s1, BLUE, (100,104),(199,132), 1)
+pygame.draw.circle(s1, CIAN, (122, 250), 20, 0)
 pygame.draw.ellipse(s1, H61CD35, (275,200,40,80), 10)
 
 points = [(100,300), (100,100), (150,100),(200,162)]
