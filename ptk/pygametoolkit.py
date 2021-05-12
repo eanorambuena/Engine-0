@@ -1,5 +1,5 @@
 import pygame, sys, os
-from engineConstants import *
+from ptk.constants import *
 
 #other variables
 clock=pygame.time.Clock()
@@ -71,64 +71,3 @@ def gameLoopSetup(window):
   pygame.display.update() #=pygame.display.flip()
   clock.tick(window.FPS)
 
-'''movement
-px = 50
-py = 200
-ancho = 40
-velocidad = 10
-
-#Variables salto
-salto = False
-#Contador de salto
-cuentaSalto = 10
-
-#Variables dirección
-izquierda = False
-derecha = False
-
-#Pasos
-cuentaPasos = 0
-
-#Opción tecla pulsada
-keys = pygame.key.get_pressed()
-
-#Tecla A - Moviemiento a la izquierda
-if keys[pygame.K_a] and px > velocidad:
-  px -= velocidad
-  izquierda = True
-  derecha = False
-
-#Tecla D - Moviemiento a la derecha
-elif keys[pygame.K_d] and px < 900 - velocidad - ancho:
-  px += velocidad
-  izquierda = False
-  derecha = True
-
-#Personaje quieto
-else:
-  izquierda = False
-  derecha = False
-  cuentaPasos = 0
-
-#Tecla W - Moviemiento hacia arriba
-if keys[pygame.K_w] and py > 100:
-  py -= velocidad
-
-#Tecla S - Moviemiento hacia abajo
-if keys[pygame.K_s] and py < 300:
-        py += velocidad
-#Tecla SPACE - Salto
-if not (salto):
-  if keys[pygame.K_SPACE]:
-    salto = True
-    izquierda = False
-    derecha = False
-    cuentaPasos = 0
-else:
-  if cuentaSalto >= -10:
-    py -= (cuentaSalto * abs(cuentaSalto)) * 0.5
-    cuentaSalto -= 1
-  else:
-    cuentaSalto = 10
-    salto = False
-'''

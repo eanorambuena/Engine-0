@@ -3,9 +3,9 @@ resources
 '''
 #moduls
 import pygame, sys, os
-from engineConstants import *
+from ptk.constants import *
 from pygame.locals import *
-import ptkEngineResources as ptk
+import ptk.pygametoolkit as ptk
 
 def pygameMain():
   ''' 

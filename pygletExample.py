@@ -28,11 +28,11 @@ def pygletMain():
   def on_mouse_press(x, y, button, modifiers):
     if button == mouse.LEFT:
         print('The left mouse button was pressed.')
-
+ 
   @window.event
   def on_draw():
     window.clear()
-    image.blit(0, 0)
+    image.blit(0, 0) 
     label.draw()
 
   pyglet.app.run()
